@@ -1,11 +1,12 @@
 import type { Metadata } from 'next'
+import { ClerkProvider } from '@clerk/nextjs'
+
 import { Inter } from 'next/font/google'
 
 import './globals.css'
 
 import Navbar from '@/components/navbar/Navbar'
 import Providers from '@/app/providers'
-import { ClerkProvider } from '@clerk/nextjs'
 
 export const metadata: Metadata = {
   title: 'Next.js AirBnB',
