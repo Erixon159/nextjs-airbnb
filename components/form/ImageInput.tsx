@@ -16,6 +16,7 @@ function ImageInput() {
         required
         accept="image/*"
         className="max-w-xs"
+        style={{ paddingTop: '5.5px' }}
       />
     </div>
   )
