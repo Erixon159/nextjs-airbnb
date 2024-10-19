@@ -23,7 +23,11 @@ function CountriesInput({ defaultValue }: { defaultValue?: string }) {
         <SelectContent>
           {formattedCountries.map((item) => {
             return (
-              <SelectItem key={item.code} value={item.code}>
+              <SelectItem
+                key={item.code}
+                value={item.code}
+                textValue={item.name}
+              >
                 <span className="flex items-center gap-2">
                   {item.flag} {item.name}
                 </span>

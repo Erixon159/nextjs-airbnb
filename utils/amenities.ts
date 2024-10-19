@@ -21,6 +21,7 @@ import {
   FiRadio,
   FiFilm,
   FiTv,
+  FiCheckCircle,
 } from 'react-icons/fi'
 
 export type Amenity = {
@@ -67,3 +68,11 @@ export const amenities: Amenity[] = [
   { name: 'lanterns (fireflies)', icon: FiFilm, selected: false },
   { name: 'first aid kit (hope and prayers)', icon: FiTv, selected: false },
 ]
+
+export function findAmenityIconByName(name: string): IconType {
+  const amenity = amenities.find(
+    (amenity) => amenity.name.toLowerCase() === name.toLowerCase(),
+  )
+
+  return amenity?.icon || FiCheckCircle
+}

@@ -16,6 +16,7 @@ function AmenitiesInput({ defaultValue }: { defaultValue?: Amenity[] }) {
         if (a.name === amenity.name) {
           return { ...a, selected: !a.selected }
         }
+
         return a
       })
     })
