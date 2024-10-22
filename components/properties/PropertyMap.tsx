@@ -5,6 +5,7 @@ import 'leaflet/dist/leaflet.css'
 import { icon } from 'leaflet'
 
 import { findCountryByCode } from '@/utils/countries'
+
 import CountryFlagAndName from '@/components/card/CountryFlagAndName'
 import Title from './Title'
 

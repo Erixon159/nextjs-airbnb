@@ -1,4 +1,5 @@
 import { fetchPropertyReviews } from '@/utils/actions'
+
 import Title from '@/components/properties/Title'
 import ReviewCard from './ReviewCard'
 

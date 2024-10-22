@@ -1,13 +1,15 @@
 import { currentUser } from '@clerk/nextjs/server'
 import { redirect } from 'next/navigation'
 
+import { createProfileAction } from '@/utils/actions'
+
 import FormInput from '@/components/form/FormInput'
 import { SubmitButton } from '@/components/form/Buttons'
 import FormContainer from '@/components/form/FormContainer'
-import { createProfileAction } from '@/utils/actions'
 
 async function CreateProfile() {
   const user = await currentUser()
+
   if (user?.privateMetadata?.hasProfile) redirect('/')
 
   return (

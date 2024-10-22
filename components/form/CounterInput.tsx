@@ -22,6 +22,7 @@ function CounterInput({
       if (prevCount > 0) {
         return prevCount - 1
       }
+
       return prevCount
     })
   }

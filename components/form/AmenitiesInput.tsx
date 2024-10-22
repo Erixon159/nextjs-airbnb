@@ -3,11 +3,18 @@
 import { useState } from 'react'
 
 import { amenities, Amenity } from '@/utils/amenities'
+
 import { Checkbox } from '@/components/ui/checkbox'
 
 function AmenitiesInput({ defaultValue }: { defaultValue?: Amenity[] }) {
+  const amenitiesWithIcons = defaultValue?.map(({ name, selected }) => ({
+    name,
+    selected,
+    icon: amenities.find((amenity) => amenity.name === name)!.icon,
+  }))
+
   const [selectedAmenities, setSelectedAmenities] = useState<Amenity[]>(
-    defaultValue || amenities,
+    amenitiesWithIcons || amenities,
   )
 
   const handleChange = (amenity: Amenity) => {

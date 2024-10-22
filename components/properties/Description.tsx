@@ -2,8 +2,8 @@
 
 import { useState } from 'react'
 
-import Title from './Title'
 import { Button } from '@/components/ui/button'
+import Title from './Title'
 
 const maxLength = 40
 

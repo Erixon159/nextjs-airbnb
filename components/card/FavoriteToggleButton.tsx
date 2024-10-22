@@ -1,7 +1,8 @@
 import { auth } from '@clerk/nextjs/server'
 
-import { CardSignInButton } from '@/components/form/Buttons'
 import { fetchFavoriteId } from '@/utils/actions'
+
+import { CardSignInButton } from '@/components/form/Buttons'
 import FavoriteToggleForm from './FavoriteToggleForm'
 
 async function FavoriteToggleButton({ propertyId }: { propertyId: string }) {

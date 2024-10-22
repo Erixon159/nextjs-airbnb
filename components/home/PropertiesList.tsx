@@ -1,4 +1,5 @@
 import type { PropertyCardProps } from '@/utils/types'
+
 import PropertyCard from '@/components/card/PropertyCard'
 
 function PropertiesList({ properties }: { properties: PropertyCardProps[] }) {

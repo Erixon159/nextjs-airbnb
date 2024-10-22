@@ -1,6 +1,7 @@
+import React from 'react'
+
 import { Amenity, findAmenityIconByName } from '@/utils/amenities'
 import Title from './Title'
-import React from 'react'
 
 function Amenities({ amenities }: { amenities: string }) {
   const amenitiesList: Amenity[] = JSON.parse(amenities as string)

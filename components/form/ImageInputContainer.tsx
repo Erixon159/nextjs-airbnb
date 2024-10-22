@@ -4,8 +4,9 @@ import { useState } from 'react'
 import { LuUser2 } from 'react-icons/lu'
 import Image from 'next/image'
 
-import { Button } from '@/components/ui/button'
 import { type actionFunction } from '@/utils/types'
+
+import { Button } from '@/components/ui/button'
 import FormContainer from './FormContainer'
 import ImageInput from './ImageInput'
 import { SubmitButton } from './Buttons'

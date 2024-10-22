@@ -1,4 +1,5 @@
 import { deleteReviewAction, fetchPropertyReviewsByUser } from '@/utils/actions'
+
 import EmptyList from '@/components/home/EmptyList'
 import ReviewCard from '@/components/reviews/ReviewCard'
 import Title from '@/components/properties/Title'
@@ -7,6 +8,7 @@ import { IconButton } from '@/components/form/Buttons'
 
 async function ReviewsPage() {
   const reviews = await fetchPropertyReviewsByUser()
+
   if (reviews.length === 0) return <EmptyList />
 
   return (

@@ -1,5 +1,6 @@
 import { fetchProperties } from '@/utils/actions'
 import type { PropertyCardProps } from '@/utils/types'
+
 import PropertiesList from './PropertiesList'
 import EmptyList from './EmptyList'
 

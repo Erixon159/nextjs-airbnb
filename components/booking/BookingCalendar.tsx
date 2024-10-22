@@ -5,14 +5,14 @@ import { DateRange } from 'react-day-picker'
 import { useToast } from '@/hooks/use-toast'
 
 import { useProperty } from '@/utils/store'
-import { Calendar } from '@/components/ui/calendar'
-
 import {
   generateDisabledDates,
   generateDateRange,
   defaultSelected,
   generateBlockedPeriods,
 } from '@/utils/calendar'
+
+import { Calendar } from '@/components/ui/calendar'
 
 function BookingCalendar() {
   const { toast } = useToast()

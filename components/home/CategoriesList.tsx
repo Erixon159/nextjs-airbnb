@@ -1,6 +1,7 @@
 import Link from 'next/link'
 
 import { categories } from '@/utils/categories'
+
 import { ScrollArea, ScrollBar } from '@/components/ui/scroll-area'
 
 function CategoriesList({
@@ -15,7 +16,7 @@ function CategoriesList({
   return (
     <section>
       <ScrollArea className="py-6">
-        <div className="flex gap-x-4">
+        <div className="flex gap-x-4 justify-center">
           {categories.map((item) => {
             const isActive = item.label === category
 

@@ -2,6 +2,8 @@ import { LuAlignLeft } from 'react-icons/lu'
 import Link from 'next/link'
 import { SignedIn, SignedOut, SignInButton, SignUpButton } from '@clerk/nextjs'
 
+import { links } from '@/utils/links'
+
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -12,8 +14,6 @@ import {
 import { Button } from '@/components/ui/button'
 import UserIcon from './UserIcon'
 import SignOutLink from './SignOutLink'
-
-import { links } from '@/utils/links'
 
 function LinksDropdown() {
   return (

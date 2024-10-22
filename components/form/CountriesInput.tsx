@@ -1,5 +1,5 @@
-import { Label } from '@/components/ui/label'
 import { formattedCountries } from '@/utils/countries'
+
 import {
   Select,
   SelectContent,
@@ -7,6 +7,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from '@/components/ui/select'
+import { Label } from '@/components/ui/label'
 
 const name = 'country'
 

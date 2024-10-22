@@ -3,6 +3,7 @@ import dynamic from 'next/dynamic'
 import { auth } from '@clerk/nextjs/server'
 
 import { fetchPropertyDetails, findExistingReview } from '@/utils/actions'
+
 import BreadCrumbs from '@/components/properties/BreadCrumbs'
 import FavoriteToggleButton from '@/components/card/FavoriteToggleButton'
 import ShareButton from '@/components/properties/ShareButton'

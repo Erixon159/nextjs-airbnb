@@ -32,6 +32,7 @@ function ShareButton({
 
   const handleCopyClick = async () => {
     await copy(shareLink)
+
     setCopied(true)
     setTimeout(() => setCopied(false), 2000) // Reset after 2 seconds
   }

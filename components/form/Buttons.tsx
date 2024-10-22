@@ -1,10 +1,10 @@
 'use client'
 
-import { ReloadIcon } from '@radix-ui/react-icons'
 import { useFormStatus } from 'react-dom'
-import { SignInButton } from '@clerk/nextjs'
 import { FaHeart, FaRegHeart } from 'react-icons/fa'
 import { LuTrash2, LuPenSquare } from 'react-icons/lu'
+import { ReloadIcon } from '@radix-ui/react-icons'
+import { SignInButton } from '@clerk/nextjs'
 
 import { Button } from '@/components/ui/button'
 
@@ -92,6 +92,7 @@ export const IconButton = ({ actionType }: { actionType: actionType }) => {
         return <LuTrash2 />
       default:
         const never: never = actionType
+
         throw new Error(`Invalid action type: ${never}`)
     }
   }

@@ -1,4 +1,5 @@
 import { fetchFavorites } from '@/utils/actions'
+
 import EmptyList from '@/components/home/EmptyList'
 import PropertiesList from '@/components/home/PropertiesList'
 
