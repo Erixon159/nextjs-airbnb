@@ -1,3 +1,5 @@
+/* eslint-disable react-hooks/exhaustive-deps */
+
 'use client'
 
 import { useEffect, useState } from 'react'
@@ -30,7 +32,8 @@ function BookingCalendar() {
 
   useEffect(() => {
     const selectedRange = generateDateRange(range)
-    const isDisabledDateIncluded = selectedRange.some((date) => {
+
+    selectedRange.some((date) => {
       if (unavailableDates[date]) {
         setRange(defaultSelected)
         toast({
