@@ -8,7 +8,6 @@ import FavoriteToggleButton from '@/components/card/FavoriteToggleButton'
 import ShareButton from '@/components/properties/ShareButton'
 import ImageContainer from '@/components/properties/ImageContainer'
 import PropertyRating from '@/components/card/PropertyRating'
-import BookingCalendar from '@/components/properties/booking/BookingCalendar'
 import PropertyDetails from '@/components/properties/PropertyDetails'
 import UserInfo from '@/components/properties/UserInfo'
 import { Separator } from '@/components/ui/separator'
@@ -18,11 +17,20 @@ import { Skeleton } from '@/components/ui/skeleton'
 import SubmitReview from '@/components/reviews/SubmitReview'
 import PropertyReviews from '@/components/reviews/PropertyReviews'
 
+// makes sure we render this only on client
 const DynamicMap = dynamic(
   () => import('@/components/properties/PropertyMap'),
   {
     ssr: false,
     loading: () => <Skeleton className="h-[400px] w-full" />,
+  },
+)
+
+const DynamicBookingWrapper = dynamic(
+  () => import('@/components/booking/BookingWrapper'),
+  {
+    ssr: false,
+    loading: () => <Skeleton className="h-[200px] w-full" />,
   },
 )
 
@@ -66,7 +74,12 @@ async function PropertyDetailsPage({ params }: { params: { id: string } }) {
           <DynamicMap countryCode={property.country} />
         </div>
         <div className="lg:col-span-4 flex flex-col items-center">
-          <BookingCalendar />
+          {/* calendar */}
+          <DynamicBookingWrapper
+            propertyId={property.id}
+            price={property.price}
+            bookings={property.bookings}
+          />
         </div>
       </section>
       {reviewDoesNotExist && <SubmitReview propertyId={property.id} />}
