@@ -7,6 +7,7 @@ type FormInputProps = {
   label?: string
   defaultValue?: string
   placeholder?: string
+  disabled?: boolean
 }
 
 function FormInput({
@@ -15,6 +16,7 @@ function FormInput({
   type,
   defaultValue,
   placeholder,
+  disabled = false,
 }: FormInputProps) {
   return (
     <div className="mb-2">
@@ -28,6 +30,7 @@ function FormInput({
         defaultValue={defaultValue}
         placeholder={placeholder}
         required
+        disabled={disabled}
       />
     </div>
   )

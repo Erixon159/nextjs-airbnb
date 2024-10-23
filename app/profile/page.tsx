@@ -43,6 +43,13 @@ async function ProfilePage() {
               label="Username"
               defaultValue={profile.username}
             />
+            <FormInput
+              type="text"
+              name="email"
+              label="Email (Read only)"
+              disabled
+              defaultValue={profile.email}
+            />
           </div>
           <SubmitButton text="Update Profile" className="mt-8" />
         </FormContainer>

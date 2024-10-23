@@ -27,7 +27,6 @@ function SubmitReview({ propertyId }: { propertyId: string }) {
             <TextAreaInput
               name="comment"
               labelText="your thoughts on this property"
-              defaultValue="Amazing place !!!"
               rows={3}
             />
             <SubmitButton text="Submit" className="mt-4" />
