@@ -1,5 +1,7 @@
 # Next.js Airbnb-like Project
 
+<img width="1512" alt="Screenshot 2024-10-23 at 22 26 41" src="https://github.com/user-attachments/assets/5a04ceaf-7196-47de-9b63-4a0b09c87fad">
+
 ## Description
 
 This project is a result of my effort to building full-stack applications using **Next.js 14**. The app serves as an Airbnb-like platform, designed to demonstrate modern web development techniques and practices. I wanted to get some hands-on experience with more advanced concepts in NextJS.
